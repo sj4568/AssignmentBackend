@@ -2,7 +2,7 @@ const moongse = require('mongoose')
 
 const ConnectDB = async () => {
     try {
-        const con = await moongse.connect(`${process.env.MONGODB_PORT}/assignment`)
+        const con = await moongse.connect(`${process.env.MONGODB_PORT}`)
         console.log(`Database is Connected on ${con.connection.host}`);
     } catch (error) {
         console.log(error);

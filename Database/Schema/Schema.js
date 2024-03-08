@@ -10,7 +10,7 @@ const ResisterSchema = mongoose.Schema({
     type: String,
   },
   img: {
-   
+
     type: String,
   },
   email: {

@@ -12,7 +12,7 @@ exports.Resister = async (req, res) => {
       ...req.body,
       password: await HashPassword(req.body.password),
     };
-    const exist = await UserModel.findOne({ email,username });
+    const exist = await UserModel.findOne({ email });
     if (exist) {
       res.send({
         status:"faild",
